@@ -1,0 +1,31 @@
+{
+  "name": "discord-music-bot",
+  "version": "1.0.0",
+  "description": "Simple discord music bot using discord-player module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snowflake107/discord-music-bot.git"
+  },
+  "keywords": [
+    "music",
+    "discord",
+    "bot",
+    "music-bot"
+  ],
+  "author": "Snowflake107",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Snowflake107/discord-music-bot/issues"
+  },
+  "homepage": "https://github.com/Snowflake107/discord-music-bot#readme",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.2",
+    "discord-player": "^2.0.1",
+    "discord.js": "^12.2.0",
+    "genius-lyrics": "^3.0.0"
+  }
+}
