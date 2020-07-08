@@ -1,6 +1,8 @@
 # MusicBoat
 Discord music bot using **[discord-player](https://npmjs.com/package/discord-player)**
 
+> Example bot
+
 # How to use?
 - Download the project
 - Rename `config.example.js` to `config.js`
