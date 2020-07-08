@@ -1,7 +1,7 @@
 module.exports = {
     help: {
-        name: "bass",
-        aliases: []
+        name: "bassboost",
+        aliases: ["bass"]
     },
     run: async (client, message, args) => {
         if (!message.member.voice.channel) return message.channel.send("❌ | You are not in a voice channel!");
