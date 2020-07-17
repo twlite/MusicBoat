@@ -9,11 +9,11 @@ module.exports = {
         if (!client.player.isPlaying(message.guild.id)) {
             return message.channel.send("❌ | I'm not playing anything?");
         }
-        message.guild.bassboost = false;
+        let bass = await client.player.getQueue(message.guild.id).filters.bassboost;
         client.player.setFilters(message.guild.id, {
-            bassboost: !message.guild.bassboost
+            bassboost: !bass
         });
         message.guild.bassboost = !message.guild.bassboost;
-        return message.channel.send(`✅ | Bassboost ${message.guild.bassboost ? "Enabled" : "Disabled"}!`)
+        return message.channel.send(`✅ | Bassboost ${!bass ? "Enabled" : "Disabled"}!`)
     }
 };
