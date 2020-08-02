@@ -12,9 +12,9 @@ module.exports = {
         if (!client.player.isPlaying(message.guild.id)) {
             return message.channel.send("❌ | I'm not playing anything?");
         }
-        const speedup = await client.player.getQueue(message.guild.id).filters.speedup;
+        const speedup = await client.player.getQueue(message.guild.id).filters["speedup"];
         client.player.setFilters(message.guild.id, {
-            speedup: !speedup
+            "speedup": !speedup
         });
         return message.channel.send(`✅ | Player speed set to ${!speedup ? "1.3x" : "1x"}!`);
     }
