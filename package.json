@@ -24,7 +24,7 @@
   "homepage": "https://github.com/Snowflake107/discord-music-bot#readme",
   "dependencies": {
     "@discordjs/opus": "^0.3.2",
-    "discord-player": "^2.0.1",
+    "discord-player": "^2.3.1",
     "discord.js": "^12.2.0",
     "genius-lyrics": "^3.0.0"
   }
