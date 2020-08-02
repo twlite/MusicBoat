@@ -19,7 +19,7 @@ const player = new Player(client, {
 
 // load custom filters
 Object.keys(customFilters).forEach(c => {
-    player.filters.c = customFilters[c];
+    player.filters[`${c}`] = customFilters[c];
 });
 
 // load player
